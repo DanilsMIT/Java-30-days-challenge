@@ -1,0 +1,4 @@
+Un reloj cronómetro para una plataforma digital estudiantil.
+
+El reloj dinámico toma la hora actual de la zona 
+y a partir de esa hora cuenta 7200segundos límite hasta finalizar el examen.

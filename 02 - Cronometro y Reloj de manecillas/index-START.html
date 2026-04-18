@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS + CSS Clock</title>
+    <link rel="icon" href="https://fav.farm/🔥" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main class="chronometer">
+      <div class="clock">
+        <div class="clock__face">
+          <div class="clock__hand clock__hand--hour"></div>
+          <div class="clock__hand clock__hand--min"></div>
+          <div class="clock__hand clock__hand--sec"></div>
+          <div class="clock__display">
+            <p class="clock__display-text">00:00:00</p>
+          </div>
+        </div>
+      </div>
+      <p class="chronometer__info">Tiene 2 horas para la prueba</p>
+      <label class="chronometer__label"
+        >Haga clic para comenzar la prueba:</label
+      >
+      <button id="btnIniciar" class="chronometer__button">
+        Empezar Examen
+      </button>
+      <button id="btnTerminar" class="chronometer__button btn-deshabilitado">
+        Finalizar
+      </button>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
