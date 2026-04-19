@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scoped CSS Variables and JS</title>
+    <link rel="icon" href="https://fav.farm/🔥" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h2>Update CSS Variables with <span class="hl">JS</span></h2>
+
+    <div class="controls">
+      <label for="spacing">Spacing:</label>
+      <input
+        id="padding"
+        type="range"
+        name="padding"
+        min="10"
+        max="200"
+        value="10"
+        data-sizing="px"
+      />
+
+      <label for="blur">Blur:</label>
+      <input
+        id="blur"
+        type="range"
+        name="blur"
+        min="0"
+        max="25"
+        value="10"
+        data-sizing="px"
+      />
+
+      <label for="base">Base Color</label>
+      <input id="baseColor" type="color" name="baseColor" value="#ffc600" />
+    </div>
+
+    <img
+      src="https://static.wikia.nocookie.net/yugiohenespanol/images/7/75/Foto_ataque_malvado.jpg/revision/latest?cb=20250213002528&path-prefix=es"
+    />
+
+    <style></style>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
