@@ -1,4 +1,4 @@
-import panel from "./panel.js";
+import panel from "./panelClass.js";
 const panels = [
   {
     top: "Hey",

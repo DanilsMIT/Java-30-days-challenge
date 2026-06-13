@@ -1,0 +1,82 @@
+/* Day8.css */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+canvas {
+  display: block;
+  background-color: #ffffff;
+  cursor: crosshair;
+}
+
+.panel-controles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.control-grupo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.control-grupo label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Estilo unificado para select e inputs */
+select,
+input[type="range"],
+input[type="color"] {
+  background-color: #34495e;
+  color: white;
+  border: 1px solid #7f8c8d;
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Efecto azul al hacer clic en el menú desplegable */
+select:focus {
+  border-color: #3498db;
+}
+
+input[type="color"] {
+  padding: 2px;
+  width: 45px;
+  height: 32px;
+}
+
+/* Checkbox de Rainbow */
+.checkbox-grupo {
+  background-color: #34495e;
+  padding: 6px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.checkbox-grupo label,
+.checkbox-grupo input {
+  cursor: pointer;
+}

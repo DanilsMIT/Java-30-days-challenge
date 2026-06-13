@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizarra Interactiva HTML5</title>
+    <link rel="icon" href="https://fav.farm/🔥" />
+    <link rel="stylesheet" href="./Day8.css" />
+  </head>
+  <body>
+    <form
+      class="panel-controles"
+      id="panel-form"
+      onsubmit="event.preventDefault()"
+    >
+      <div class="control-grupo">
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color" value="#f2ff00" />
+      </div>
+
+      <div class="control-grupo">
+        <label for="grosor">Grosor:</label>
+        <input
+          type="number"
+          id="grosor"
+          name="grosor"
+          min="1"
+          max="100"
+          value="10"
+        />
+      </div>
+
+      <div class="control-grupo">
+        <label for="punta">Punta (Cap):</label>
+        <select id="punta" name="punta">
+          <option value="round" selected>Redonda</option>
+          <option value="butt">Plana</option>
+          <option value="square">Cuadrada</option>
+        </select>
+      </div>
+
+      <div class="control-grupo">
+        <label for="curva">Curva (Join):</label>
+        <select id="curva" name="curva">
+          <option value="round" selected>Suave</option>
+          <option value="miter">Pico</option>
+          <option value="bevel">Bisel</option>
+        </select>
+      </div>
+
+      <div class="control-grupo checkbox-grupo">
+        <label for="rainbow">🌈 Rainbow</label>
+        <input type="checkbox" id="rainbow" name="rainbow" />
+      </div>
+
+      <div class="control-grupo">
+        <button
+          type="button"
+          id="btn-limpiar"
+          style="padding: 5px 10px; cursor: pointer"
+        >
+          Limpiar
+        </button>
+      </div>
+    </form>
+
+    <canvas id="draw"></canvas>
+
+    <script type="module" src="./Day8.js"></script>
+  </body>
+</html>
