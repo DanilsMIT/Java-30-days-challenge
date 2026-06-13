@@ -74,12 +74,12 @@ export default class Pizarra {
 
   setEventListeners() {
     //touching
-    this.pizarra.addEventListener("mousedown", (e) => {
+    this.pizarra.addEventListener("pointerdown", (e) => {
       this.trazo = true;
       [this.punto_de_trazo_X, this.punto_de_trazo_Y] = [e.offsetX, e.offsetY];
     });
-    this.pizarra.addEventListener("mousemove", (e) => this.dibujar(e));
-    this.pizarra.addEventListener("mouseup", () => (this.trazo = false));
-    this.pizarra.addEventListener("mouseout", () => (this.trazo = false));
+    this.pizarra.addEventListener("pointermove", (e) => this.dibujar(e));
+    this.pizarra.addEventListener("pointerup", () => (this.trazo = false));
+    this.pizarra.addEventListener("pointerout", () => (this.trazo = false));
   }
 }

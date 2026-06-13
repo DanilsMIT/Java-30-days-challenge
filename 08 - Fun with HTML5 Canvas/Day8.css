@@ -13,6 +13,7 @@ canvas {
   display: block;
   background-color: #ffffff;
   cursor: crosshair;
+  touch-action: none;
 }
 
 .panel-controles {
